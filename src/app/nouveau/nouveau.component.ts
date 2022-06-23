@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nouveau',
-  templateUrl: './nouveau.component.html',
-  styleUrls: ['./nouveau.component.sass']
+    selector: 'app-nouveau',
+    templateUrl: './nouveau.component.html',
+    styles: ['h1 { color: green; }']
 })
 export class NouveauComponent implements OnInit {
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
+
 
 }

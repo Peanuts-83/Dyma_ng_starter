@@ -1,1 +1,13 @@
-{{ title }}
+<input type="text" [(ngModel)]='color' />
+<div [ngClass]="{
+        square: color === 'red',
+        round: color === 'green'
+    }" [ngStyle]="{
+        width: '200px',
+        height: '200px',
+        background: color
+    }" (click)="changeColor()"></div>
+
+<ul>
+    <li *ngFor="let user of users; let i = index">{{ i }} - {{ user.nom }}</li>
+</ul>
